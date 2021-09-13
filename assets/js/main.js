@@ -18,10 +18,10 @@ const app = Vue.createApp({
       */
       correctAnswer: {
         stage1: {
-          q1: 'あああ',
+          q1: 'ソボク',
         },
         stage2: {
-          q1: 'いいい',
+          q1: 'うっかり',
           // q2: 'えええ',
           // q3: 'おおお'
         },
@@ -126,5 +126,6 @@ app.component('answer-input', {
     },
   }
 })
+
 
 app.mount('#stage')
