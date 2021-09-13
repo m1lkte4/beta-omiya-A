@@ -130,11 +130,44 @@ Youtube貼り付けここまで -->
                 <div class="column">
                   <!-- STAGE2-1問題セクション　ここから -->
                   <figure class="image__container">
-                    <img class="images_transform" src="assets/images/picture1.png" id="pic1">
-                    <img class="images_transform" src="assets/images/picture2.png" id="pic2">
-                    <img class="images_transform" src="assets/images/picture3.png" id="pic3">
-                    <img class="images_transform" src="assets/images/picture4.png" id="pic4">
-
+                    <img class="images_transform" src="assets/images/picture1.png" id="pic">
+                    <script>
+                      pic.onmousedown = function(event) {
+                  
+                      let shiftX = event.clientX - pic.getBoundingClientRect().left;
+                      let shiftY = event.clientY - pic.getBoundingClientRect().top;
+                      
+                      pic.style.position = 'absolute';
+                      pic.style.zIndex = 1000;
+                      document.body.append(pic);
+                      
+                      moveAt(event.pageX, event.pageY);
+                      
+                      // ボールを（pageX、pageY）座標の中心に置く
+                      function moveAt(pageX, pageY) {
+                        pic.style.left = pageX - shiftX + 'px';
+                        pic.style.top = pageY - shiftY + 'px';
+                      }
+                      
+                      function onMouseMove(event) {
+                        moveAt(event.pageX, event.pageY);
+                      }
+                      
+                      // (3) mousemove でボールを移動する
+                      document.addEventListener('mousemove', onMouseMove);
+                      
+                      // (4) ボールをドロップする。不要なハンドラを削除する
+                      pic.onmouseup = function() {
+                        document.removeEventListener('mousemove', onMouseMove);
+                        pic.onmouseup = null;
+                      };
+                      
+                      };
+                      
+                      pic.ondragstart = function() {
+                      return false;
+                      };
+                    </script>
                     
                   </figure>
                   <!-- STAGE2-1問題セクション　ここまで -->
