@@ -26,6 +26,7 @@ body {
   list-style: none;
   color: #000;
   margin: 0;
+  background-color: #D9C9B0;
 }
 
 img {
@@ -239,7 +240,7 @@ button {
 * Color
 *********************/
 .bg-color--keycolor {
-  background-color: #39b54a;
+  background-color: #D9C9B0;
 }
 
 .bg-color--subcolor {
@@ -247,7 +248,7 @@ button {
 }
 
 .bg-color--gray {
-  background-color: #e6e6e6;
+  background-color: #D9C9B0;
 }
 
 /*********************
@@ -274,7 +275,7 @@ button {
   line-height: 1.75;
   text-align: center;
   padding: 9px 20px;
-  background-color: #d9e021;
+  background-color: #fff;
   margin: 0 -20px 20px -20px;
 }
 
@@ -336,8 +337,8 @@ button {
   display: block;
   text-decoration: none;
   cursor: pointer;
-  background-color: #006837;
-  color: #fff;
+  background-color: #fff;
+  color: #747474;
   font-size: 24px;
   line-height: 1.54167;
   text-align: center;
@@ -346,6 +347,7 @@ button {
   max-width: 700px;
   margin: 10px auto;
   position: relative;
+  border: 3px solid #747474;
 }
 
 .btn:hover {
@@ -508,5 +510,18 @@ button {
 
 .hidden {
   display: none;
+}
+
+.sample ul{
+  display: flex;
+  overflow-x: scroll;
+  margin: 0;        
+  padding: 0;
+}
+.sample li{
+  min-width: 40%;
+  margin: 10px;        
+  padding: 0;
+  list-style: none;
 }
 /*# sourceMappingURL=style.css.map */
