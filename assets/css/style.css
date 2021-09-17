@@ -251,6 +251,10 @@ button {
   background-color: #D9C9B0;
 }
 
+.stage1_background{
+  background-color: #fff;
+}
+
 /*********************
 * title
 **********************/
@@ -385,8 +389,8 @@ button {
 }
 
 .header__logo {
-  width: 330px;
-  height: 42px;
+  width: 270px;
+  height: 58px;
 }
 
 .header__name {
@@ -396,6 +400,7 @@ button {
 
 .footer {
   font-size: 16px;
+  background-color: #fff;
 }
 
 .footer p:first-child {
@@ -511,6 +516,7 @@ button {
 .hidden {
   display: none;
 }
+/*# sourceMappingURL=style.css.map */
 
 .sample ul{
   display: flex;
@@ -524,4 +530,4 @@ button {
   padding: 0;
   list-style: none;
 }
-/*# sourceMappingURL=style.css.map */
+
