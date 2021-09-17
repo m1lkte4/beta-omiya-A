@@ -17,7 +17,7 @@
   </svg>
   <header class="header">
     <div class="container">
-      <div class="header__logo"><img src="assets/images/logo.svg" alt="チームロゴ"></div>
+      <div class="header__logo"><img src="assets/images/大宮キャンパスAチーム 背景色アイボリー.png" alt=""></div>
       <div class="header__name">N・S高生制作サイト</div>
     </div>
   </header>
@@ -40,17 +40,9 @@
   
             <div class="container">
               <figure class="image__container">
-                <img src="assets/images/Aの謎切り抜き.png" alt="">
+                <div class="stage1_background"><img src="assets/images/Aの謎切り抜き.png" alt=""></div>
               </figure>
-                
- <!--  YouTube貼り付け
-              <div class="youtube__container">
-                <div class="youtube">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/IRyJe-0Uie0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-              </div>
-Youtube貼り付けここまで -->
-                
+
             </div>
           </div>
         </section>
@@ -86,8 +78,11 @@ Youtube貼り付けここまで -->
             <div class="clear-message">
               <div class="clear-message__title">STAGE：１  クリア！</div>
               <div class="clear-message__content">家庭科室の扉が開いた！<br>
-                さぁ先生を助けるため<br>
-                ３つステージの謎をとき、暗号を見つけ出そう！</div>
+                <div class="youtube__container">
+                  <div class="youtube">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IRyJe-0Uie0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -129,46 +124,8 @@ Youtube貼り付けここまで -->
                 <!-- STAGE2-1　ここから -->
                 <div class="column">
                   <!-- STAGE2-1問題セクション　ここから -->
-                  <figure class="image__container">
-                    <img class="images_transform" src="assets/images/picture1.png" id="pic">
-                    <script>
-                      pic.onmousedown = function(event) {
-                  
-                      let shiftX = event.clientX - pic.getBoundingClientRect().left;
-                      let shiftY = event.clientY - pic.getBoundingClientRect().top;
-                      
-                      pic.style.position = 'absolute';
-                      pic.style.zIndex = 1000;
-                      document.body.append(pic);
-                      
-                      moveAt(event.pageX, event.pageY);
-                      
-                      // ボールを（pageX、pageY）座標の中心に置く
-                      function moveAt(pageX, pageY) {
-                        pic.style.left = pageX - shiftX + 'px';
-                        pic.style.top = pageY - shiftY + 'px';
-                      }
-                      
-                      function onMouseMove(event) {
-                        moveAt(event.pageX, event.pageY);
-                      }
-                      
-                      // (3) mousemove でボールを移動する
-                      document.addEventListener('mousemove', onMouseMove);
-                      
-                      // (4) ボールをドロップする。不要なハンドラを削除する
-                      pic.onmouseup = function() {
-                        document.removeEventListener('mousemove', onMouseMove);
-                        pic.onmouseup = null;
-                      };
-                      
-                      };
-                      
-                      pic.ondragstart = function() {
-                      return false;
-                      };
-                    </script>
-                    
+                  <figure class="image__container"></figure>
+                   <img src="assets/images/なぞ.jpg" alt="">
                   </figure>
                   <!-- STAGE2-1問題セクション　ここまで -->
                   <!-- STAGE2-1解答入力セクション　ここから -->
@@ -221,6 +178,11 @@ Youtube貼り付けここまで -->
               <div class="clear-message__title">STAGE：2　クリア！</div>
               <div class="clear-message__content">黒板の指示に従い、<br>
                 次のステージの謎を解こう！</div>
+                <div class="youtube__container">
+                  <div class="youtube">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IRyJe-0Uie0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
                 <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -240,7 +202,7 @@ Youtube貼り付けここまで -->
               どうやら、廃棄にかかる費用がかかりすぎて小学校の運営が厳しくなったようだ。。<br>
               これらを解決するための最後の謎を解いていこう！</p>
             <figure class="image__container">
-              <img src="assets/images/stage.png" alt="">
+              <img src="assets/images/謎ゾーン2.png" alt="">
             </figure>
           </div>
         </section>
@@ -261,61 +223,11 @@ Youtube貼り付けここまで -->
         </section>
         <!-- STAGE3-1解答入力セクション　ここまで -->
 
-<!-- STAGE3-2問題セクション を追加
 
-          <section class="section">
-          <div class="container">
 
-            <figure class="image__container">
-              <img src="assets/images/stage.png" alt="">
-            </figure>
-          </div>
-        </section>
 
-        <section class="section bg-color--keycolor">
-          <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>キーワードを入力</h2>
-            <answer-input v-bind:correct="correctAnswer['stage3']['q2']" v-on:answer-input="answerInput($event, 'stage3', 2, 'final')"></answer-input>
-            <a class="link-hint" href="hint3.html" target="hint3">ヒントをみる ></a>
-          </div>
-        </section>
-      　　
-STAGE3-2追加ここまで -->
-
-          
-<!-- STAGE3-3問題セクション　を追加
-        <section class="section">
-          <div class="container">
-
-            <figure class="image__container">
-              <img src="assets/images/stage.png" alt="">
-            </figure>
-          </div>
-        </section>
-
-        <section class="section bg-color--keycolor">
-          <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>キーワードを入力</h2>
-
-            <answer-input v-bind:correct="correctAnswer['stage3']['q3']" v-on:answer-input="answerInput($event, 'stage3', 3, 'final')"></answer-input>
-            <a class="link-hint" href="hint3.html" target="hint3">ヒントをみる ></a>
-          </div>
-        </section>
-
-STAGE3-3追加　ここまで -->
-
-          
       </div>
       <!-- STAGE3　ここまで -->
-
-    </div>
-  </main>
-  <footer class="footer section bg-color--gray">
-    <div class="container">
-        <p class="text-center">授業主催： N・S高<br>協力：株式会社SCRAP<br>企画制作：N・S高生</p>
-        <p class="text-center">「リアル脱出ゲーム」は株式会社SCRAPの登録商標です。</p>
-        <p class="text-center">株式会社SCRAPとN・S高で実施した授業「リアル脱出ゲームの作り方」の一環で<br>生徒が制作したものであり、SCRAPが主催/公認するものではありません。</p>
-    </div>
   </footer>
   <script src="https://unpkg.com/vue@next"></script>
   <script src="assets/js/main.js"></script>
