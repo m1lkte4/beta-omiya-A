@@ -26,9 +26,12 @@ const app = Vue.createApp({
           // q3: 'おおお'
         },
         stage3: {
-          q1: 'ううう',
+          q1: 'ゾーン',
           // q2: 'かかか',
           // q3: 'ききき',
+        },
+        stage4: {
+          q1: 'あああ'
         }
       },
 
@@ -48,7 +51,10 @@ const app = Vue.createApp({
           false, // 3-1
           // false, // 3-2
           // false, // 3-3
-        ]
+        ],
+        stage4: [
+          false, //4-1
+        ],
       },
 
       /* ステージの問題が全て正解かどうか */
