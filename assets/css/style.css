@@ -516,18 +516,21 @@ button {
 .hidden {
   display: none;
 }
+
+/********************
+* stage4
+********************/
+.stage4 {
+  position: relative;
+}
+
+.stage4_asset{
+  width: 60px;
+  height: 60px;
+
+  position: absolute;
+  top: 55%;
+  left: 21%;
+}
+
 /*# sourceMappingURL=style.css.map */
-
-.sample ul{
-  display: flex;
-  overflow-x: scroll;
-  margin: 0;        
-  padding: 0;
-}
-.sample li{
-  min-width: 40%;
-  margin: 10px;        
-  padding: 0;
-  list-style: none;
-}
-
