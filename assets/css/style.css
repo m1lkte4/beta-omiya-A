@@ -499,8 +499,9 @@ button {
 }
 
 .picture_size {
+  display: block;
+  margin:auto;
   width: 600px;
-  margin: 0 auto;
 }
 
 /********************
