@@ -79,10 +79,11 @@ button {
   display: block;
   border: none;
   margin: 0 auto;
-  background-color: #006837;
-  color: #fff;
+  background-color: #F8F4E6;
+  color: #000;
   width: 287px;
   height: 55px;
+  border: 3px solid #747474;
 }
 
 li {
@@ -293,7 +294,7 @@ li {
 }
 
 .section-title--keycolorlight {
-  background-color: #8cc63f;
+  background:rgba(225,150,97,0.55);
 }
 
 .section-title--keycolorlight .section-title__stage {
@@ -301,7 +302,7 @@ li {
 }
 
 .section-title--keycolor {
-  background-color: #39b54a;
+  background:rgba(225,150,97,0.55);
 }
 
 .section-title--story {
@@ -503,10 +504,10 @@ li {
   margin: 0;
 }
 
-.picture_size {
+.picture_size{
   display: block;
   margin:auto;
-  width: 500px;
+  width: 400px;
 }
 
 /********************
@@ -544,4 +545,8 @@ li {
   left: 21%;
 }
 
+
+
 /*# sourceMappingURL=style.css.map */
+
+
