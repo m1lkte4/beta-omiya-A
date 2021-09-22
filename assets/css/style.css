@@ -498,6 +498,11 @@ button {
   margin: 0;
 }
 
+.picture_size {
+  width: 600px;
+  margin: 0 auto;
+}
+
 /********************
 * Utility
 ********************/
