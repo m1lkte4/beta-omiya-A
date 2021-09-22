@@ -7,6 +7,16 @@
   <title>AIダヴィンチからの挑戦状 │ Project N</title>
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <script type="text/JavaScript">
+    function myVis(name)
+    {
+    myPIC = document.images[name].style;
+    if (myPIC.visibility == "visible") myPIC.visibility = "hidden";
+    else myPIC.visibility = "visible";
+    }
+    // --></script>
+
 </head>
 <body>
   <svg width="0" height="0" class="hidden">
@@ -20,16 +30,6 @@
       <div class="header__logo"><img src="assets/images/大宮キャンパスAチーム 背景色アイボリー.png" alt=""></div>
       <div class="header__name">N・S高生制作サイト</div>
     </div>
-	  
-　　　　　　　　　<script type="text/JavaScript">
-    　　function myVis(name)
-    {
-    　　myPIC = document.images[name].style;
-    　　if (myPIC.visibility == "visible") myPIC.visibility = "hidden";
-    　　else myPIC.visibility = "visible";
-    }
-    // --></script>
-	  
   </header>
   <main class="main main-page">
     <!-- タイトルエリア　ここから -->
@@ -50,17 +50,18 @@
   
             <div class="container">
               <figure class="image__container">
-                <img src="assets/images/アートボード 1.png" alt="">
-                <div class="stage1_background"><img src="assets/images/うみ謎のコピー.png" alt=""></div>
-                <div class="stage4">
-                  <img src="https://github.com/m1lkte4/beta-omiya-A/blob/main/assets/images/%E4%BF%AE%E6%AD%A3%E7%89%88%E3%81%8B%E3%81%9B%E3%82%99%E3%81%AE%E3%82%B3%E3%83%92%E3%82%9A%E3%83%BC.png?raw=true">
-                    <div class="stage4_asset">
-                       <a href="javaScript:myVis('bbb')">
-                        <img src="https://github.com/m1lkte4/beta-omiya-A/blob/main/assets/images/%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88%201%E3%81%AE%E3%82%B3%E3%83%92%E3%82%9A%E3%83%BC.png?raw=true"name="bbb"></a>
-                       </div>
-                    </div>
-                </div>
-	        <img src="https://github.com/m1lkte4/beta-omiya-A/blob/main/assets/images/%E3%81%8B%E3%81%9B%E3%82%99.png?raw=true">
+                <div class="stage1_background">
+                  <img src="assets/images/アートボード 1.png" alt="">
+                  <img src="assets/images/うみ謎のコピー.png" alt="">
+                  <div class="stage4">
+                    <img src="assets/images/修正版かぜのコピー.png">
+                      <div class="stage4_asset">
+                        <a href="javaScript:myVis('bbb')">
+                          <img src="assets/images/アセット 1のコピー.png"name="bbb"></a>
+                      </div>
+                  </div>
+                  <img src="assets/images/かぜのコピー.png" alt="">
+              </div>
               </figure>
 
             </div>
@@ -72,7 +73,6 @@
         <section class="section bg-color--keycolor">
           <div class="container">
             <h2 class="section-title"><span class="section-title__stage">STAGE：4</span>キーワードを入力</h2>
-            <h5 class="text-center">※答えはカタカナで書いてね！</h5>
             <!------------------------------------------------------------------------------------------------------------
               解答入力欄のコンポーネントです。入力欄・送信ボタン・エラーメッセージを表示します。
               v-bind:correct="correctAnswer['stage1']['q1']" は正解の解答を指します。
@@ -83,7 +83,7 @@
             ------------------------------------------------------------------------------------------------------------>
             <answer-input v-bind:correct="correctAnswer['stage4']['q1']" v-on:answer-input="answerInput($event, 'stage1', 1)"></answer-input>
 
-            <a class="link-hint" href="hint4.html" target="hint1">ヒントをみる ></a>
+            <a class="link-hint" href="hint4.html" target="hint1">ヒントをみる</a>
           </div>
         </section>
         <!-- STAGE1解答入力セクション　ここまで -->
@@ -127,9 +127,9 @@
               <section class="section">
                 <div class="container">
                   <a class="btn" href="final.html">次へ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></a>
-                  </div>
+                  </div>>
                 </div>
-                </div>
+                </div>>
               </section>
       <!-- 解説　ここまで -->
 
