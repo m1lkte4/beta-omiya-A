@@ -253,7 +253,7 @@ ul {
 }
 
 .bg-color--subcolor {
-  background-color: #d9e021;
+  background:rgba(225,150,97,0.55);
 }
 
 .bg-color--gray {
@@ -321,7 +321,7 @@ ul {
   line-height: 1.06667;
   margin: 0;
   padding-bottom: 15px;
-  color: #006837;
+  color: #000;
 }
 
 .section-title--border::after {
