@@ -94,6 +94,12 @@ ul {
   justify-content: center;
 }
 
+.key_size {
+  width: 700px;
+  display: block;
+  margin:auto;
+}
+
 /*******************
 * Layout
 *******************/
