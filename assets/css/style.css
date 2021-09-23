@@ -517,7 +517,11 @@ ul {
 .picture_size{
   display: block;
   margin:auto;
-  width: 400px;
+  width: 300px;
+}
+
+.picture_size2 {
+  width: 500px;
 }
 
 /********************
